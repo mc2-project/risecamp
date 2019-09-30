@@ -21,5 +21,5 @@ COPY nginx.conf /etc/nginx/sites-enabled/default
 # do this last so that your container builds are as fast as possible
 # when updating the content in tutorial/
 COPY tutorial /home/$NB_USER/
-
+RUN mkdir /home/$NB_USER/shared_data
 EXPOSE 22
