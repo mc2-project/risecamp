@@ -4,7 +4,7 @@ from FederatedXGBoost import FederatedXGBoost
 fxgb = FederatedXGBoost()
 
 # Get number of federating parties
-print(fxgb.get_num_parties())
+print("Number of parties in federation: ", fxgb.get_num_parties())
 
 # Load training data
 fxgb.load_training_data('/data/msd_test_data_split.csv')
@@ -15,7 +15,7 @@ num_rounds = 50
 fxgb.train(params, num_rounds)
 
 # Save the model
-fxgb.save_model("tutorial_model.txt")
+fxgb.save_model("tutorial_model.model")
 
 # Shutdown
 fxgb.shutdown()
