@@ -7,7 +7,8 @@ RUN pip3 install pandas sklearn awscli
 RUN git clone https://github.com/mc2-project/dmlc-core.git /home/dmlc-core
 RUN git clone https://github.com/mc2-project/secure-xgboost.git /home/secure-xgboost && cd /home/secure-xgboost && git submodule init && git submodule update
 RUN cd /home/secure-xgboost; make; cd python-package; python3 setup.py install
-RUN aws s3 sync s3://risecamp2019-mc2 /data
+RUN aws s3 --no-sign-request --region=us-east-2 sync s3://risecamp2019-mc2/hospital /data/hospital 
+RUN aws s3 --no-sign-request --region=us-east-2 sync s3://risecamp2019-mc2/insurance /data/insurance
 
 # use "$NB_USER" when installing python packages
 USER $NB_USER
