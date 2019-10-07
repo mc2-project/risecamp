@@ -1,6 +1,7 @@
 import xgboost as xgb
 from numpy import genfromtxt
 import logging
+import pickle
 
 class FederatedXGBoost:
     def __init__(self):
@@ -21,30 +22,32 @@ class FederatedXGBoost:
     
     def train(self, params, num_rounds):
         if self.dtrain == None:
-            logging.error("Training data not yet loaded")
+            print("Training data not yet loaded")
         self.model = xgb.train(params, self.dtrain, num_rounds)
 
     def predict(self):
         if self.dtest == None:
-            logging.error("Test data not yet loaded")
+            print("Test data not yet loaded")
         return self.model.predict(self.dtest)
 
     def eval(self):
         if self.dtest == None:
-            logging.error("Test data not yet loaded")
+            print("Test data not yet loaded")
         return self.model.eval(self.dtest)
 
     def get_num_parties(self):
         return xgb.rabit.get_world_size()
 
     def load_model(self, model_path):
-        self.model = xgb.Booster()
-        self.model.load_model(model_path)
+        # self.model = xgb.Booster()
+        # self.model.load_model(model_path)
+        self.model = pickle.load(open(model_path, "rb"))
 
     def save_model(self, model_name):
-        self.model.save_model(model_name)
-        logging.info("Saved model to {}".format(model_name))
+        # self.model.save_model(model_name)
+        pickle.dump(self.model, open(model_name, "wb"))
+        print("Saved model to {}".format(model_name))
 
     def shutdown(self):
-        logging.info("Shutting down tracker")
+        print("Shutting down tracker")
         xgb.rabit.finalize()
