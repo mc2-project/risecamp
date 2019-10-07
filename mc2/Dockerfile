@@ -2,7 +2,7 @@ FROM ucbjey/risecamp2018-base:2b580e66f1f7
 
 # use apt-get as user "root" to install ubuntu packages
 USER root
-RUN apt-get update && apt-get install -y g++ openssh-client openssh-server dnsutils
+RUN apt-get update && apt-get install -y g++ openssh-client openssh-server dnsutils tcpdump
 RUN pip3 install pandas sklearn awscli pymongo
 RUN git clone https://github.com/mc2-project/dmlc-core.git /home/dmlc-core
 RUN git clone https://github.com/mc2-project/secure-xgboost.git /home/secure-xgboost && cd /home/secure-xgboost && git submodule init && git submodule update

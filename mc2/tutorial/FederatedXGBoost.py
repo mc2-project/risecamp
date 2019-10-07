@@ -11,12 +11,12 @@ class FederatedXGBoost:
         self.model = None
 
     def load_training_data(self, training_data_path):
-        training_data_path += training_data_path[:-4] + "_" + str(xgb.rabit.get_rank()) + ".csv"
+        training_data_path = training_data_path[:-4] + "_" + str(xgb.rabit.get_rank() + 1) + ".csv"
         training_data = genfromtxt(training_data_path, delimiter=',')
         self.dtrain = xgb.DMatrix(training_data[:, 1:], label=training_data[:, 0])
 
     def load_test_data(self, test_data_path):
-        test_data_path += test_data_path[:-4] + "_" + str(xgb.rabit.get_rank()) + ".csv"
+        test_data_path = test_data_path[:-4] + "_" + str(xgb.rabit.get_rank() + 1) + ".csv"
         test_data = genfromtxt(test_data_path, delimiter=',')
         self.dtest = xgb.DMatrix(test_data[:, 1:], label=test_data[:, 0])
     
