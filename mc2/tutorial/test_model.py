@@ -7,10 +7,10 @@ fxgb = FederatedXGBoost()
 print("Number of parties in federation: ", fxgb.get_num_parties())
 
 # Load model
-fxgb.load_model("tutorial_model.model")
+fxgb.load_model("ex3_model.model")
 
 # Load the test data
-fxgb.load_test_data('/data/msd_test_data_split.csv')
+fxgb.load_test_data('/data/hospital/hospital_test.csv')
 
 # Evaluate the model
 print(fxgb.eval())
