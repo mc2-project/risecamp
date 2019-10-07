@@ -5,5 +5,4 @@
 
 set -o errexit
 
-service ssh start
 echo "hello world!"
