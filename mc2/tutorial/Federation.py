@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+from os.path import expanduser
 
 db_username = "xgboost"
 db_password = "risecampmc2"
@@ -12,7 +13,8 @@ class PKI:
         try:
             # TODO determine IP address automatically
             posts = self.db.posts
-            pubkey = open('/home/ubuntu/.ssh/id_rsa.pub').read().strip()
+            home = expanduser("~")
+            pubkey = open(home + '/.ssh/id_rsa.pub').read().strip()
             post_data = {
                 'user': username,
                 'IP': IP,

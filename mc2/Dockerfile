@@ -3,7 +3,7 @@ FROM ucbjey/risecamp2018-base:2b580e66f1f7
 # use apt-get as user "root" to install ubuntu packages
 USER root
 RUN apt-get update && apt-get install -y g++ openssh-client openssh-server dnsutils
-RUN pip3 install pandas sklearn awscli
+RUN pip3 install pandas sklearn awscli pymongo
 RUN git clone https://github.com/mc2-project/dmlc-core.git /home/dmlc-core
 RUN git clone https://github.com/mc2-project/secure-xgboost.git /home/secure-xgboost && cd /home/secure-xgboost && git submodule init && git submodule update
 RUN cd /home/secure-xgboost; make; cd python-package; python3 setup.py install
