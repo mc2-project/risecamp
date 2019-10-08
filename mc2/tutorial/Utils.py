@@ -1,0 +1,179 @@
+from pymongo import MongoClient
+from os.path import expanduser
+import subprocess
+import sys
+
+db_username = "xgboost"
+db_password = "risecampmc2"
+
+class PKI:
+    def __init__(self):
+        self.client = MongoClient('mongodb://%s:%s@54.202.14.46:27017/PKI' % (db_username, db_password))
+        self.db = self.client['PKI']
+
+
+    def upload(self, username, IP, pubkey):
+        try:
+            collection = self.db.posts
+            query = \
+            { 
+                    'user': username
+            }
+            doc = \
+            { 
+                    'user': username, 
+                    'IP': IP, 
+                    'key': pubkey 
+            }
+            result = collection.find_one_and_replace(query, doc, upsert=True)
+            print(result)
+        except Exception as e:
+            print(str(e))
+
+
+    def lookup(self, username):
+        try:
+            posts = self.db.posts
+            query = { 
+                    'user': username 
+                    }
+            result = posts.find_one(query)
+            if result == None: 
+                print("User %s not found" % username) 
+                return None, None
+            else: 
+                return result['IP'], result['key']
+        except Exception as e:
+            print(str(e))
+
+    
+    def save_key(self, username):
+        try:
+            IP, key = self.lookup(username)
+            if key == None:
+                return
+            home = expanduser("~")
+            with open(home + "/.ssh/authorized_keys", "a") as authorized_keys:
+                authorized_keys.write("%s\n" % key)
+                print("Saved key for user %s" % username)
+        except Exception as e:
+            print(str(e))
+
+
+
+class Federation:
+    def __init__(self, username):
+        self.client = MongoClient('mongodb://%s:%s@54.202.14.46:27017/Federations' % (db_username, db_password))
+        self.db = self.client['Federations']
+        self.username = username
+
+    def create_federation(self, members):
+        try:
+            if self.username not in members:
+                members.append(self.username)
+
+            collection = self.db.federations
+            query = \
+            { 
+                    'master': self.username 
+            }
+            doc = \
+            { 
+                    'master': self.username, 
+                    'members': members 
+            }
+            result = collection.find_one_and_replace(query, doc, upsert=True)
+            print(result)
+
+
+            collection = self.db.members
+            query = \
+            { 
+                    'member': self.username 
+            }
+            doc = \
+            { 
+                    'member': self.username,
+                    'federation': self.username,
+                    'role': 'master'
+            }
+            result = collection.find_one_and_replace(query, doc, upsert=True)
+        except Exception as e:
+            print(str(e))
+        
+
+    def join_federation(self, master_username):
+        try:
+
+            collection = self.db.federations
+            query = \
+            { 
+                    'master': master_username,
+                    'members': {'$all': [self.username]}
+
+            }
+            result = collection.find_one(query)
+            if result == None:
+                print("Either the federation does not exist, or the central server (aggregator) hasn't added you as a member.")
+                return
+
+            collection = self.db.members
+            query = \
+            { 
+                    'member': self.username 
+            }
+            doc = \
+            { 
+                    'member': self.username,
+                    'federation': master_username,
+                    'role': 'worker'
+            }
+            result = collection.find_one_and_replace(query, doc, upsert=True)
+            print(result)
+            
+        except Exception as e:
+            print(str(e))
+
+
+    def check_federation(self, master_username):
+        try:
+            collection = self.db.federations
+            query = \
+            {
+                    'master' : master_username,
+            }
+            result = collection.find_one(query)
+            if result == None:
+                print("No such federation exists")
+                return False
+
+            members = result['members']
+            print("Federation members: %s" % members)
+
+            collection = self.db.members
+            for member in members:
+                query = \
+                {
+                        'member': member,
+                        'federation': master_username
+                }
+                if collection.count_documents(query, limit = 1) == 0:
+                    print("User %s has not joined the federation" % member)
+                    return False
+            print("All users have joined the federation")
+            return True
+        except Exception as e:
+            print(str(e))
+            
+def start_job(num_parties, memory, script_path):
+    cmd = ["../dmlc-core/tracker/dmlc-submit", "--cluster", "ssh", "--num-workers", str(num_parties), "--host-file", "hosts.config", "--worker-memory", str(memory) + "g", "/opt/conda/bin/python3", script_path]
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    for line in iter(process.stdout.readline, b''):
+        sys.stdout.write(line)
+        
+def scp(file, dest_ip, dest_dir):
+    cmd = ["scp", "-v", "-P", "5522", "-o", "StrictHostKeyChecking=no", file, dest_ip + ":" + dest_dir]
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    for line in iter(process.stdout.readline, b''):
+        sys.stdout.write(line)
+
