@@ -1,6 +1,12 @@
 import pandas as pd
+import subprocess
 
 def network_analysis(master, worker_1, worker_2, worker_3):
+    tshark_cmd = 'tshark -r capture.pcap -T fields -e frame.number -e eth.src -e eth.dst -e ip.src -e ip.dst -e frame.len -E header=y -E separator=, > capture.csv'
+    tshark_process = subprocess.Popen(tshark_cmd, stdout=subprocess.PIPE, shell=True)
+    while tshark_process.poll() is None:
+        continue
+
     capture = pd.read_csv('capture.csv', names=['Frame Number', 'Ethernet Source', 'Ethernet Destination', 
                                             'IP Source', 'IP Destination', 'Frame Length'], header=0)
     capture.dropna(subset=['IP Source', 'IP Destination'], inplace=True)
