@@ -225,13 +225,11 @@ class FederatedXGBoost:
         return xgb.rabit.get_world_size()
 
     def load_model(self, model_path):
-        # self.model = xgb.Booster()
-        # self.model.load_model(model_path)
-        self.model = pickle.load(open(model_path, "rb"))
+        self.model = xgb.Booster()
+        self.model.load_model(model_path)
 
     def save_model(self, model_name):
-        # self.model.save_model(model_name)
-        pickle.dump(self.model, open(model_name, "wb"))
+        self.model.save_model(model_name)
         print("Saved model to {}".format(model_name))
 
     def shutdown(self):
