@@ -7,8 +7,10 @@ RUN pip3 install pandas sklearn awscli pymongo
 RUN git clone https://github.com/mc2-project/dmlc-core.git /home/dmlc-core
 RUN git clone https://github.com/mc2-project/secure-xgboost.git /home/secure-xgboost && cd /home/secure-xgboost && git submodule init && git submodule update
 RUN cd /home/secure-xgboost; make; cd python-package; python3 setup.py install
+RUN echo "hello"
 RUN aws s3 --no-sign-request --region=us-east-2 sync s3://risecamp2019-mc2/hospital /data/hospital 
 RUN aws s3 --no-sign-request --region=us-east-2 sync s3://risecamp2019-mc2/insurance /data/insurance
+RUN groupadd tcpdump; addgroup $NB_USER tcpdump; chown root.tcpdump /usr/sbin/tcpdump; chmod 0750 /usr/sbin/tcpdump; setcap "CAP_NET_RAW+eip" /usr/sbin/tcpdump
 
 # use "$NB_USER" when installing python packages
 USER $NB_USER
@@ -26,3 +28,5 @@ COPY nginx.conf /etc/nginx/sites-enabled/default
 COPY tutorial /home/$NB_USER/
 RUN mkdir /home/$NB_USER/shared_data
 EXPOSE 22
+
+USER root
