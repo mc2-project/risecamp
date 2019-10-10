@@ -238,8 +238,25 @@ class FederatedXGBoost:
 
 
 def start_job(num_parties, memory, script_path):
+    with open("hosts.config") as f:
+        tmp = f.readlines()
+    for h in tmp:
+        if len(h.strip()) > 0:
+            # parse addresses of the form ip:port
+            h = h.strip()
+            i = h.find(":")
+            p = "22"
+            if i != -1:
+                p = h[i+1:]
+                h = h[:i]
+            cmd = ["scp", "-P", str(p), "-o",
+           "StrictHostKeyChecking=no", "train_model.py", str(h) + ":~"]
+            process = subprocess.Popen(
+                cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+
     cmd = ["../dmlc-core/tracker/dmlc-submit", "--cluster", "ssh", "--num-workers",
-           str(num_parties), "--sync-dst-dir", "~/train_model.py", "--host-file", "hosts.config", "--worker-memory", str(memory) + "g", "/opt/conda/bin/python3", script_path]
+           str(num_parties), "--host-file", "hosts.config", "--worker-memory", str(memory) + "g", "/opt/conda/bin/python3", script_path]
     process = subprocess.Popen(
         cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in iter(process.stdout.readline, b''):
