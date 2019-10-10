@@ -14,6 +14,10 @@ training_data_path = "path/to/data"
 fxgb.load_training_data(training_data_path)
 
 # Train a model
+# TODO: modify the `objective` parameter depending on which dataset you're using
+# We recommend setting objective to binary:logistic for the insurance dataset
+# and objective to multi:softmax for the hospital dataset
+# If using the hospital dataset, you also need to set `num_classes` to 5 
 params = {'max_depth': 3, 'min_child_weight': 1.0, 'lambda': 1.0}
 num_rounds = 50
 fxgb.train(params, num_rounds)
