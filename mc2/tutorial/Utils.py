@@ -237,70 +237,33 @@ class FederatedXGBoost:
         xgb.rabit.finalize()
 
 
-def start_job(num_parties, memory, script_path):
-    with open("hosts.config") as f:
-        tmp = f.readlines()
-    for h in tmp:
-        if len(h.strip()) > 0:
-            # parse addresses of the form ip:port
-            h = h.strip()
-            i = h.find(":")
-            p = "22"
-            if i != -1:
-                p = h[i+1:]
-                h = h[:i]
-            cmd = ["scp", "-P", str(p), "-o",
-           "StrictHostKeyChecking=no", "train_model.py", str(h) + ":~"]
-            process = subprocess.Popen(
-                cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+def start_job(num_parties):
+#    with open("hosts.config") as f:
+#        tmp = f.readlines()
+#    for h in tmp:
+#        if len(h.strip()) > 0:
+#            # parse addresses of the form ip:port
+#            h = h.strip()
+#            i = h.find(":")
+#            p = "22"
+#            if i != -1:
+#                p = h[i+1:]
+#                h = h[:i]
+#            cmd = ["scp", "-p", str(p), "-o",
+#           "StrictHostKeyChecking=no", "train_model.py", str(h) + ":~"]
+#            process = subprocess.Popen(
+#                cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
+    # Check if training job is already running; if so kill it
+    # cmd = ["kill", "-9", "$(ps aux | awk '$11=="" {print $2}')", "||", "true"]
 
     cmd = ["../dmlc-core/tracker/dmlc-submit", "--cluster", "ssh", "--num-workers",
-           str(num_parties), "--host-file", "hosts.config", "--worker-memory", str(memory) + "g", "/opt/conda/bin/python3", script_path]
+           str(num_parties), "--host-file", "hosts.config", "--worker-memory", "4g", "/opt/conda/bin/python3", "/home/$USER/train_model.py"]
     process = subprocess.Popen(
         cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in iter(process.stdout.readline, b''):
         sys.stdout.write(line)
 
 
-def scp(file, dest_ip, dest_dir):
-    cmd = ["scp", "-v", "-P", "5522", "-o",
-           "StrictHostKeyChecking=no", file, dest_ip + ":" + dest_dir]
-    process = subprocess.Popen(
-        cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    for line in iter(process.stdout.readline, b''):
-        line = line.decode("utf-8")
-        if "debug1" not in line:
-            sys.stdout.write(line)
 
 
-def network_analysis(master, worker_1, worker_2, worker_3):
-    tshark_cmd = 'tshark -r capture.pcap -T fields -e frame.number -e eth.src -e eth.dst -e ip.src -e ip.dst -e frame.len -E header=y -E separator=, > capture.csv'
-    tshark_process = subprocess.Popen(
-        tshark_cmd, stdout=subprocess.PIPE, shell=True)
-    while tshark_process.poll() is None:
-        continue
-
-    capture = pd.read_csv('capture.csv', names=['Frame Number', 'Ethernet Source', 'Ethernet Destination',
-                                                'IP Source', 'IP Destination', 'Frame Length'], header=0)
-    capture.dropna(subset=['IP Source', 'IP Destination'], inplace=True)
-
-    labels = {master: 'Master', worker_1: 'worker_1',
-              worker_2: 'worker_2', worker_3: 'worker_3'}
-    capture.replace(labels, inplace=True)
-
-    capture['Transmission'] = capture.apply(
-        lambda row: row['IP Source'] + ' -> ' + row['IP Destination'], axis=1)
-    count_bytes = capture.groupby('Transmission', as_index=False)[
-        'Transmission', 'Frame Length'].sum()
-    count_bytes.rename(
-        mapper={'Frame Length': 'Total Bytes Transmitted'}, inplace=True, axis=1)
-    count_packets = capture['Transmission'].value_counts().rename_axis(
-        'Transmission').reset_index(name='Number of Packets')
-
-    count_bytes.set_index('Transmission', inplace=True)
-    count_packets.set_index('Transmission', inplace=True)
-    counts = count_packets.join(count_bytes, on='Transmission')
-    counts.sort_values(by='Total Bytes Transmitted',
-                       inplace=True, ascending=False)
-    return counts

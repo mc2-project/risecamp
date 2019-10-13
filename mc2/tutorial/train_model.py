@@ -16,7 +16,7 @@ num_rounds = 100
 fxgb.train(params, num_rounds)
 
 # Save the model
-fxgb.save_model("ex3_model.model")
+fxgb.save_model("ex2_model.model")
 
 # Shutdown
 fxgb.shutdown()
