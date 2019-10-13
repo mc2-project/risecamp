@@ -18,6 +18,7 @@ class PKI:
             'mongodb://%s:%s@54.202.14.46:27017/PKI' % (db_username, db_password))
         self.db = self.client['PKI']
 
+
     def upload(self, username, IP, pubkey):
         try:
             collection = self.db.posts
@@ -32,9 +33,13 @@ class PKI:
                     'key': pubkey
                 }
             result = collection.find_one_and_replace(query, doc, upsert=True)
-            print(result)
+            print('Uploaded information:')
+            print('\tUsername: %s' % username)
+            print('\tIP: %s' % IP)
+            print('\tPublic key: %s...' % pubkey[8:18])
         except Exception as e:
             print(str(e))
+
 
     def lookup(self, username):
         try:
@@ -44,38 +49,44 @@ class PKI:
             }
             result = posts.find_one(query)
             if result == None:
-                print("User %s not found" % username)
+                print("No information found for user %s" % username)
                 return None, None
             else:
+                print('Retrieved information for user %s:' % username)
+                print('\tIP: %s' % result['IP'])
+                print('\tPublic key: %s...' % result['key'][8:18])
                 return result['IP'], result['key']
         except Exception as e:
             print(str(e))
+
 
     def save_key(self, username):
         try:
             IP, key = self.lookup(username)
             if key == None:
-                return
+                return False
             home = expanduser("~")
             with open(home + "/.ssh/authorized_keys", "a") as authorized_keys:
                 authorized_keys.write("%s\n" % key)
                 print("Saved key for user %s" % username)
+            return True
         except Exception as e:
             print(str(e))
 
 
 class Federation:
-    def __init__(self, username):
+    def __init__(self):
         self.client = MongoClient(
             'mongodb://%s:%s@54.202.14.46:27017/Federations' % (db_username, db_password))
         self.db = self.client['Federations']
-        self.username = username
+        self.username = None
         self.aggregator = None
+
 
     def check_federation(self):
         if self.aggregator is None:
             print("No federation to check. Please create or join a federation first.")
-            return
+            return False
 
         try:
             collection = self.db.federations
@@ -105,17 +116,80 @@ class Federation:
             return True
         except Exception as e:
             print(str(e))
+            return False
+
+
+    def get_federation_members(self, aggregator_name):
+        try:
+            collection = self.db.federations
+            query = \
+                {
+                    'master': aggregator_name
+                }
+            result = collection.find_one(query)
+            if (result == None):
+                print("No federation found")
+                return None
+
+            members_list = result['members']
+            members = []
+            for member in members_list:
+                members.append(member['member'])
+
+            return members
+
+        except Exception as e:
+            print(str(e))
+            return None
+
+
+    def get_federation_member_id(self, aggregator_name, member_name):
+        try:
+            collection = self.db.federations
+            query = \
+                {
+                    'master': aggregator_name
+                }
+            result = collection.find_one(query)
+            if (result == None):
+                print("No federation found")
+                return None
+
+            members_list = result['members']
+            print(members_list)
+            for member in members_list:
+                if member['member'] == member_name:
+                    return member['m_id']
+
+            return None
+
+        except Exception as e:
+            print(str(e))
+            return None
 
 
 class FederationAggregator(Federation):
     def __init__(self, username):
-        Federation.__init__(self, username)
+        Federation.__init__(self)
+        self.username = username
         self.aggregator = username
+
 
     def create_federation(self, members):
         try:
             if self.username not in members:
                 members.append(self.username)
+
+            members_list = []
+            id_ctr = 2;
+            for member in members:
+                if member == self.username:
+                    m_id = 1
+                    members_list.append({'member': member, 'm_id': m_id})
+                else:
+                    m_id = id_ctr
+                    members_list.append({'member': member, 'm_id': m_id})
+                    id_ctr = id_ctr + 1
 
             collection = self.db.federations
             query = \
@@ -125,10 +199,9 @@ class FederationAggregator(Federation):
             doc = \
                 {
                     'master': self.username,
-                    'members': members
+                    'members': members_list
                 }
             result = collection.find_one_and_replace(query, doc, upsert=True)
-            print(result)
 
             collection = self.db.members
             query = \
@@ -142,13 +215,56 @@ class FederationAggregator(Federation):
                     'role': 'master'
                 }
             result = collection.find_one_and_replace(query, doc, upsert=True)
+
+            print('Successfully created federation:')
+            print('\tAggregator: %s' % self.username)
+            print('\tMembers: %s' % members)
         except Exception as e:
             print(str(e))
 
 
+    def save_members_info(self):
+        if self.aggregator is None:
+            print("No federation to save. Please create or join a federation first.")
+            return
+        try:
+            pki = PKI()
+
+            collection = self.db.federations
+            query = \
+                {
+                    'master': self.aggregator,
+                }
+            result = collection.find_one(query)
+            if result == None:
+                print("No such federation exists")
+                return
+
+            members_list = result['members']
+            members = []
+            for member in members_list:
+                members.append(member['member'])
+            print("Federation members: %s" % members)
+
+            collection = self.db.members
+            for member in members:
+                if (member == self.username):
+                    continue
+                result = pki.save_key(member)
+                if (result == False):
+                    print("ERROR saving information")
+                    return
+            print("Members' information saved")
+            return
+        except Exception as e:
+            print(str(e))
+
+
+
 class FederationMember(Federation):
     def __init__(self, username):
-        Federation.__init__(self, username)
+        Federation.__init__(self)
+        self.username = self.username
 
     def join_federation(self, master_username):
         try:
@@ -180,8 +296,27 @@ class FederationMember(Federation):
                     'role': 'worker'
                 }
             result = collection.find_one_and_replace(query, doc, upsert=True)
-            print(result)
 
+            print('Successfully joined federation created by %s' % master_username)
+
+        except Exception as e:
+            print(str(e))
+
+
+    def save_aggregator_info(self):
+        if self.aggregator is None:
+            print("No federation to save. Please create or join a federation first.")
+            return
+        try:
+            pki = PKI()
+
+            collection = self.db.members
+            result = pki.save_key(self.aggregator)
+            if (result == True):
+                print("Aggregator information saved")
+            else:
+                print("ERROR saving information")
+            return
         except Exception as e:
             print(str(e))
 
@@ -251,10 +386,10 @@ def start_job(num_parties):
                 p = h[i+1:]
                 h = h[:i]
            
-           kill_cmd = "kill -9 $(ps aux | awk '$12 $28 ~ \"train_model.py\" {print $2}')"
+            kill_cmd = "kill -9 $(ps aux | awk '$12 $28 ~ \"train_model.py\" {print $2}')"
             ssh_kill_cmd = ["ssh", "-o", "StrictHostKeyChecking=no", str(h), "-p", str(p), kill_cmd]
            
-           process = subprocess.Popen(
+            process = subprocess.Popen(
                 ssh_kill_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
             # for line in iter(process.stdout.readline, b''):
             #    sys.stdout.write(line)

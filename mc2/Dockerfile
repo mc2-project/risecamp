@@ -26,4 +26,9 @@ COPY nginx.conf /etc/nginx/sites-enabled/default
 # when updating the content in tutorial/
 COPY tutorial /home/$NB_USER/
 RUN mkdir /home/$NB_USER/shared_data
+
+USER root
+RUN jupyter trust /home/$NB_USER/exercise0.ipynb
+
+USER $NB_USER
 EXPOSE 22
