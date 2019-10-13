@@ -238,24 +238,26 @@ class FederatedXGBoost:
 
 
 def start_job(num_parties):
-#    with open("hosts.config") as f:
-#        tmp = f.readlines()
-#    for h in tmp:
-#        if len(h.strip()) > 0:
-#            # parse addresses of the form ip:port
-#            h = h.strip()
-#            i = h.find(":")
-#            p = "22"
-#            if i != -1:
-#                p = h[i+1:]
-#                h = h[:i]
-#            cmd = ["scp", "-p", str(p), "-o",
-#           "StrictHostKeyChecking=no", "train_model.py", str(h) + ":~"]
-#            process = subprocess.Popen(
-#                cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-
-    # Check if training job is already running; if so kill it
-    # cmd = ["kill", "-9", "$(ps aux | awk '$11=="" {print $2}')", "||", "true"]
+    # Check if training_job is already running on each machine; if so kill it
+    with open("hosts.config") as f:
+        tmp = f.readlines()
+    for h in tmp:
+        if len(h.strip()) > 0:
+            # parse addresses of the form ip:port
+            h = h.strip()
+            i = h.find(":")
+            p = "22"
+            if i != -1:
+                p = h[i+1:]
+                h = h[:i]
+           
+           kill_cmd = "kill -9 $(ps aux | awk '$12 $28 ~ \"train_model.py\" {print $2}')"
+            ssh_kill_cmd = ["ssh", "-o", "StrictHostKeyChecking=no", str(h), "-p", str(p), kill_cmd]
+           
+           process = subprocess.Popen(
+                ssh_kill_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            # for line in iter(process.stdout.readline, b''):
+            #    sys.stdout.write(line)
 
     cmd = ["../dmlc-core/tracker/dmlc-submit", "--cluster", "ssh", "--num-workers",
            str(num_parties), "--host-file", "hosts.config", "--worker-memory", "4g", "/opt/conda/bin/python3", "/home/$USER/train_model.py"]
