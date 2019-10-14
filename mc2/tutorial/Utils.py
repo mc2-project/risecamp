@@ -288,6 +288,7 @@ class FederationMember(Federation):
                 members.append(member['member'])
             if self.username not in members:
                 print("The central aggregator hasn't added you as a member to the federation.")
+                return
 
             self.aggregator = master_username
 
