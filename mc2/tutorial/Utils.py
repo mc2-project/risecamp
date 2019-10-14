@@ -98,7 +98,11 @@ class Federation:
                 print("No such federation exists")
                 return False
 
-            members = result['members']
+            members_list = result['members']
+            members = []
+            for member in members_list:
+                members.append(member['member'])
+
             print("Federation members: %s" % members)
 
             collection = self.db.members
@@ -263,7 +267,7 @@ class FederationAggregator(Federation):
 class FederationMember(Federation):
     def __init__(self, username):
         Federation.__init__(self)
-        self.username = self.username
+        self.username = username
 
     def join_federation(self, master_username):
         try:
@@ -272,14 +276,18 @@ class FederationMember(Federation):
             query = \
                 {
                     'master': master_username,
-                    'members': {'$all': [self.username]}
-
                 }
             result = collection.find_one(query)
             if result == None:
-                print(
-                    "Either the federation does not exist, or the central server (aggregator) hasn't added you as a member.")
+                print("No such federation exists.")
                 return
+
+            members_list = result['members']
+            members = []
+            for member in members_list:
+                members.append(member['member'])
+            if self.username not in members:
+                print("The central aggregator hasn't added you as a member to the federation.")
 
             self.aggregator = master_username
 
