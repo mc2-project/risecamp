@@ -252,8 +252,8 @@ class FederationAggregator(Federation):
 
             collection = self.db.members
             for member in members:
-                if (member == self.username):
-                    continue
+                # if (member == self.username):
+                #    continue
                 result = pki.save_key(member)
                 if (result == False):
                     print("ERROR saving information")
