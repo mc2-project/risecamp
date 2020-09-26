@@ -3,7 +3,7 @@ import sys
 
 def transfer_data(data, ip):
     cmd = ["scp", "-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null", 
-                    data, "root@{}:~".format(ip)]
+                    data, "root@{}:/home/mc2/risecamp/mc2/tutorial/central/".format(ip)]
     run_subprocess(cmd)
     
 def generate_certificate(username):
