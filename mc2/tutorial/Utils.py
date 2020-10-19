@@ -1,13 +1,26 @@
 import subprocess
 import sys
-import _thread
 import securexgboost as mc2
+import os
+import signal
+
+running_processes = []
 
 def start_server(clients):
+    if running_processes:
+        for ps in running_processes:
+            ps.kill()
+            #  os.killpg(os.getpgid(ps.pid), signal.SIGTERM)
+#             ps.terminate()
+        
     enclave = ["python3", "utils/launch_enclave.py", str(clients)]
     orchestrator = ["python3", "utils/start_orchestrator.py", str(clients)]
-    process = subprocess.Popen(enclave)
-    process2 = subprocess.Popen(orchestrator)
+    
+    process = subprocess.Popen(enclave, preexec_fn=os.setsid)
+    running_processes.append(process)
+    
+    process2 = subprocess.Popen(orchestrator, preexec_fn=os.setsid)
+    running_processes.append(process2)
     print("Started server")
                          
 def transfer_data(data, ip):
