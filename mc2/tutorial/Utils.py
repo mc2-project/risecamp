@@ -1,10 +1,13 @@
 import subprocess
 import sys
+import os
 import securexgboost as mc2
 
 running_processes = []
 
 def start_server(clients):
+    global running_processes
+    
     if running_processes:
         for ps in running_processes:
             ps.kill()
