@@ -1,0 +1,1124 @@
+{
+  "value": [
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/0/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"6693feda-0e75-4c28-99a2-ba7899aac6f7\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "56cd348f-76ef-4ae7-8c63-b1e402d8fd85",
+        "ipAddress": "40.85.182.41",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/0/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/1/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"17d2bbba-ac29-4cab-b83c-8a77f7aa0bd5\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3dcb7ace-c7c7-4687-a016-911f1d56a464",
+        "ipAddress": "13.68.223.59",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/1/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/10/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"93e4f90d-14cf-4d39-85cc-8199ed21a402\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "b1cd08af-ba92-4b61-9d43-41d00f17358a",
+        "ipAddress": "40.71.249.245",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/10/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/11/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"898f5e1f-6154-40ca-a7a2-372eb8e2b162\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "6e8e4629-c584-41e9-9477-e8d97f2e757b",
+        "ipAddress": "52.168.174.106",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/11/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/12/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"67fa5a68-1e02-49d1-87eb-f89e078eff99\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d130a794-a768-48ad-8da1-0068a00fb2ed",
+        "ipAddress": "52.168.175.208",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/12/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/13/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"7a5feb62-02f9-41ed-b612-48e6119dfa1a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3416f2a3-db88-4e57-8b34-b7d184e57b66",
+        "ipAddress": "52.168.175.248",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/13/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/14/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"625867d3-6ea7-4a19-94c7-9094cd563e19\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "78f2fa73-b04e-4d9f-9c2a-e8f09bce883a",
+        "ipAddress": "52.168.175.233",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/14/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/15/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"57b9e5e1-d6ed-454b-8246-5e5d70f45e30\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "cc664583-a6f1-4632-8bd2-49735f6ceaf4",
+        "ipAddress": "52.191.253.3",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/15/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/16/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"5ed4f4cc-81c8-4b2b-8395-0521a61630f0\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "5bf95645-f650-472c-a165-230b525e863b",
+        "ipAddress": "52.191.253.5",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/16/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/17/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"f06f750c-d0cb-482a-90d3-b969292ed584\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4e6c8386-4ad6-4ad1-84cc-0e4e8ab50297",
+        "ipAddress": "52.191.253.7",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/17/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/18/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"203dafa9-f7a4-4b62-a280-6e43e80f6cd9\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "a7e80f58-23bb-4e85-ad93-bd474a8bad94",
+        "ipAddress": "52.191.253.22",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/18/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/19/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"19cb304a-55d3-4a62-8c05-8cf901dcf427\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "0e2d5244-e44f-4f34-90a7-7842ab3788a8",
+        "ipAddress": "52.191.253.27",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/19/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/2/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e7b4eab9-161e-47d6-bb10-f7db14e9272c\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "baf244ea-5892-4fc6-97e9-dae3442067c7",
+        "ipAddress": "13.82.107.71",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/2/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/20/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"7944e900-c42d-4f87-bf7e-b7c016e6f3c8\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "4b4bf369-5154-421f-9f28-9f723ab962e8",
+        "ipAddress": "52.191.253.28",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/20/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/21/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"8d7f2729-1a01-43e2-b56f-3c7810759b1a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "e30fc051-d3e3-492d-9766-1200ea2f474b",
+        "ipAddress": "52.191.253.31",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/21/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/22/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e8f3d787-92fd-4311-8da3-14ac5e7640b6\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "a3e44906-456e-45dc-84e2-151917ad0073",
+        "ipAddress": "52.191.253.55",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/22/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/23/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"09b9dc22-d0cf-45af-b110-f6c9e788b89a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "18d1c48c-248f-4a8a-9242-853100e98a7c",
+        "ipAddress": "52.191.253.69",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/23/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/24/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"abc58b74-ac89-4a7b-a7b8-595f89df4e83\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "548e9af2-fc75-4eac-a187-8ed81036b8dc",
+        "ipAddress": "52.191.253.73",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/24/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/25/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"7565f46e-d346-4145-9309-6d6b820bb94a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "5cda6497-934c-491e-a398-1e505516693f",
+        "ipAddress": "52.191.253.80",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/25/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/26/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"a09f0339-e9c5-4ec6-8291-609e1aca61ed\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "ef76be44-cef8-4953-b3b0-c956c473e39c",
+        "ipAddress": "52.191.253.100",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/26/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/27/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"4d4b3b2b-474e-4fbe-b244-f2c855ed6399\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d21bb77b-55e5-4b74-98b4-a2a949c466f6",
+        "ipAddress": "52.191.253.123",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/27/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/28/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"879f005f-4b52-4693-852a-7b44c2dd973e\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "37c1b2e6-ce6e-45e3-bf6e-78573d2c320d",
+        "ipAddress": "52.191.253.130",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/28/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/29/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"58db8ec9-947c-4353-a90c-b56ad9ede25a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "536f1061-e15a-423c-9aed-82b92fbf25b3",
+        "ipAddress": "52.191.253.170",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/29/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/3/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e3fd433f-1df4-491b-b937-75ed06f19ca2\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "a99f4d3f-4565-4b3c-a007-70265927326a",
+        "ipAddress": "13.92.126.23",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/3/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/30/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"4a8c7091-89c3-4e56-8915-ec77aaf435b7\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "973d4668-9f2d-4391-b738-2f46f424f0d1",
+        "ipAddress": "52.191.253.189",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/30/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/31/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"1388c480-013b-4f86-aacf-29a59ec0bf55\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "45da51d8-e4e3-4c10-ad3b-91f70740fc37",
+        "ipAddress": "52.191.253.196",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/31/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/32/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"8740065d-097d-4ef8-a6d0-94e327676298\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "bc9c66e7-d683-4634-8e50-be5cc3d9684c",
+        "ipAddress": "52.191.253.238",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/32/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/33/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"2416a2d4-af85-409b-bb66-6d16e266ce23\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "117e6545-5ee4-4465-97d7-d64dce4e6157",
+        "ipAddress": "52.191.253.246",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/33/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/34/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"f9634b67-7ea9-4ba2-89af-d0297016ed71\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "f7e5a59c-286d-4ba0-bf01-ac6b1330b873",
+        "ipAddress": "52.191.253.250",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/34/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/35/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"c5dd521f-e97f-46ef-84e7-0ce98a686808\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8ac05b08-33be-4989-a501-4822d159c032",
+        "ipAddress": "52.191.253.255",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/35/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/36/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"8c0c6ea4-f7a7-4aaf-b0e2-f89fe35d8244\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "7c38ebd8-d607-48ad-a0dd-2a63a8dd4757",
+        "ipAddress": "52.191.254.121",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/36/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/37/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"2b2f02c1-d2f7-4be3-a6ef-2f8df0c478da\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "cde81d6d-17eb-421b-89f8-b27e00ee6b9b",
+        "ipAddress": "52.191.254.122",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/37/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/38/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"9e61c24b-f1a8-440a-b1df-52e854ff3761\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "5c0d7bc3-d316-448f-97a3-dd47180c07c9",
+        "ipAddress": "52.191.254.131",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/38/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/39/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"86b3eeb3-dc5d-4f02-90ba-99159a2021d1\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d3279d95-d8f8-4eb2-9d13-d1c080406233",
+        "ipAddress": "52.191.254.132",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/39/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/4/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"11b69cfd-8f8e-4243-b337-c3d7245c271f\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "692f454d-ed21-4ce4-aa6e-3fdba65ccf3b",
+        "ipAddress": "40.121.239.51",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/4/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/40/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"f0a71702-2d0b-4c57-af30-439267f3ec71\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "e3ea5c53-5b46-44f3-929c-8c08a5c8214d",
+        "ipAddress": "52.191.254.134",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/40/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/41/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"9f6632b4-383e-48f9-a04c-12ae6c7e88d6\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "c3b00ad5-16ec-4b65-ab23-459663d5ce8a",
+        "ipAddress": "52.191.254.161",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/41/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/42/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"b1556678-3335-4f47-bed7-8d13f1886792\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "c070120e-3e00-4ef9-af55-c92149fcd7e4",
+        "ipAddress": "52.191.254.168",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/42/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/44/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e61f3cba-b983-49d9-b670-20272cdf05ad\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "8bf26f99-4a57-4b9c-b07a-2e46ee5f39dd",
+        "ipAddress": "52.191.254.183",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/44/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/46/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"20f68d61-a80f-4a4d-b789-f2f8975ca6c5\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "6242291e-4738-40d3-9143-3009720d93f9",
+        "ipAddress": "52.191.254.205",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/46/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/47/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"660fd305-84ff-4453-bf93-3ce690b4a559\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "71744456-24e3-4e29-a180-75c559ebac84",
+        "ipAddress": "52.191.254.207",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/47/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/49/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"0106d52c-3eb3-4c39-afb0-50ba3a998b92\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "814286d9-baf5-4e9a-a802-e1c08fe4ee49",
+        "ipAddress": "52.191.254.212",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/49/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/5/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"cc4ca85d-6fef-4839-ba42-41cc75caaafc\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "fba7bf25-5463-4fb9-925c-3aac31e3a308",
+        "ipAddress": "52.168.134.111",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/5/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/50/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"434d2445-22d5-4890-8a67-097dc6d0a5ae\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "74e2a0eb-4b42-4f2f-a6dc-db86ed449c66",
+        "ipAddress": "52.191.254.214",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/50/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/51/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"78ff2f0d-c502-4297-9964-e5331d4eed15\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "3afbae4e-b6ae-4893-8d3b-7d5c9d54f012",
+        "ipAddress": "52.191.254.217",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/51/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/52/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"f47badb1-a375-46ee-a857-0c80b01c4438\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "69b7daa7-029d-4e4e-a846-ca2aac1fff8e",
+        "ipAddress": "52.191.254.223",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/52/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/53/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"b4be45bb-eff0-48ff-bc7d-ff7fa287d2bb\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "63742090-fd6d-44b9-8f59-76b33103d63c",
+        "ipAddress": "52.191.254.229",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/53/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/55/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"80b25976-396a-45ef-91b4-1f581797f145\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "6ca4fc81-9dac-4183-95de-295d991e2c57",
+        "ipAddress": "52.191.254.239",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/55/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/56/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"a9409d56-b99a-462d-b603-146199caa29f\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "75e19c12-ad81-48e7-a399-d15677535d15",
+        "ipAddress": "52.191.255.130",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/56/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/57/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"64f79bc7-ce3b-42d3-aad9-d80e81803b57\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "100bf48a-0185-4a12-b1bb-45b5c5d92107",
+        "ipAddress": "52.191.255.146",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/57/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/58/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"605dae1e-0503-46b5-b051-d03899afc550\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "2bc7638c-b7af-4b37-905c-9aa42b167a6e",
+        "ipAddress": "52.191.255.152",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/58/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/6/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"56ce8ef6-5677-44e5-b1a3-1c65f6a66093\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "21c85bd7-417e-4cab-9984-876165d634cb",
+        "ipAddress": "52.170.30.8",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/6/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/60/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e603451c-2477-42b1-905b-0df4cc435396\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "2e8c97d5-5db4-4f73-9551-2b94d8cc56cd",
+        "ipAddress": "52.191.249.0",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/60/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/61/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"04ed9c55-3de5-41bc-81ac-017558033d29\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "7d230d7b-b580-4902-b08e-79b0fabdc138",
+        "ipAddress": "52.191.249.2",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/61/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/62/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"ef21b19b-e20d-4e1b-83b0-ee03d4866f6f\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "f253577f-bed3-4069-b7fb-ada574aa4a13",
+        "ipAddress": "52.191.249.4",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/62/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/63/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"d98ccaf2-640e-4758-8ba0-7ac8be8436cb\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "49103232-bbe4-428f-9c65-6c792c3ebc13",
+        "ipAddress": "52.191.249.17",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/63/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/64/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"40aa308e-e27c-4773-92e0-19c5dc022888\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "f97aaaf2-0d7b-43c3-8f0d-326f00c2a576",
+        "ipAddress": "52.191.249.21",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/64/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/65/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"b421bcec-f17e-4f2d-b4c1-f8d368f3db3e\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "32b352eb-5b32-474b-af65-07b30e0f0e02",
+        "ipAddress": "52.191.249.63",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/65/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/66/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"e4fdb288-1ac9-4d16-a229-8149343cb8c5\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "b9cfe588-ef76-423d-ab74-35a3be4c19f8",
+        "ipAddress": "52.191.249.152",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/66/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/67/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"8145f0ac-5f1b-4ffa-8fea-9ca9b3910b63\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "cd89c612-fefc-4c6a-9862-5ff36ae0fa0c",
+        "ipAddress": "52.191.249.172",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/67/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/68/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"8954e5d5-81fa-412b-8ac2-82124116b16b\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "dfc3f901-7d67-4131-aef3-1ed2b480b2ad",
+        "ipAddress": "52.191.249.180",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/68/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/70/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"801d44b1-94ca-4485-8a1b-c149d612f35c\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d7cfdc75-7351-4d30-9ebc-007366cd09e6",
+        "ipAddress": "52.191.249.197",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/70/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/72/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"2027421a-65a4-4283-9ad6-b7bc43c3a49a\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "9e20f0d4-a420-4df6-b1c9-f02d79b1c6a5",
+        "ipAddress": "52.191.249.203",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/72/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/73/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"4e9ae540-a00c-47a5-be54-eb0c557c7493\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "c3b3ba04-992e-4c24-bd0d-f80a1a234125",
+        "ipAddress": "52.191.249.210",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/73/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/74/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"84ca7b58-5e80-4a96-8cdf-68689b297717\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "26636722-e6ab-4cb1-90fe-2c8ec7a844fa",
+        "ipAddress": "52.191.249.212",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/74/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/75/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"6eec8319-fdac-4729-bffe-645c2ef342cb\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d0b980b9-c93e-49a1-b413-309f4ea7440d",
+        "ipAddress": "52.191.249.215",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/75/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/76/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"cc79101c-dbc3-49a5-9dc0-5af43fee9074\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "eb5f3913-d09e-44a9-a373-d4b1c9664fa8",
+        "ipAddress": "52.191.249.217",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/76/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/77/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"04a88814-4a35-4b89-a7db-57284a81216e\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "72fe90d4-f313-44e6-9313-663e16af7e37",
+        "ipAddress": "52.191.249.226",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/77/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/78/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"a5a667cf-4039-409a-be02-d2cfa069b677\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "ef23d0cc-bac4-44d5-b639-9d5bb143a68c",
+        "ipAddress": "52.191.249.230",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/78/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    },
+    {
+      "name": "publicIp-risecampfinalvnet410-nic01",
+      "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/8/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration/publicIPAddresses/publicIp-risecampfinalvnet410-nic01",
+      "etag": "W/\"1706eed2-8bb2-4243-98f4-df03074d53cd\"",
+      "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "1e91bc39-f108-4089-adec-a5c36d4e32b5",
+        "ipAddress": "52.170.30.47",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 15,
+        "ipConfiguration": {
+          "id": "/subscriptions/df627953-2df5-435f-87d0-5e7e03e40cd6/resourceGroups/risecamp-final/providers/Microsoft.Compute/virtualMachineScaleSets/risecamp-70/virtualMachines/8/networkInterfaces/risecampfinalvnet410-nic01/ipConfigurations/risecampfinalvnet410-nic01-defaultIpConfiguration"
+        }
+      }
+    }
+  ]
+}
