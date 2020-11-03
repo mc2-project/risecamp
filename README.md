@@ -5,10 +5,8 @@ Welcome to the MC<sup>2</sup> tutorial for RISE Camp 2020. MC<sup>2</sup> is a p
 ## Cloud Setup
 Azure Confidential Computing offers [virtual machines with Intel SGX support](https://azure.microsoft.com/en-us/blog/dcsv2series-vm-now-generally-available-from-azure-confidential-computing/) that you can use with MC2. You can also choose to use non enclave machines, in which case you'll need to build our library in simulation mode, as explained below. 
 
-### Install Secure XGBoost
 Follow the README in the [Secure XGBoost repository](https://github.com/mc2-project/secure-xgboost) to install Secure XGBoost. If using a machine without enclave support, build the library in simulation mode -- take a look at step 5 of the ["Installation"](https://github.com/mc2-project/secure-xgboost#installation) section. 
 
-### Start the tutorial
 Once you've installed Secure XGBoost, clone this repository and navigate to `risecamp/mc2/tutorial/`. Begin the tutorial with Exercise 1. 
 
 ## Docker Setup
