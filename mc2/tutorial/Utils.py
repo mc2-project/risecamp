@@ -24,9 +24,8 @@ def start_server(clients):
     print("Started server")
                          
 def transfer_data(data, ip):
-    print("Transferring {} to {}".format(data, ip))
-    cmd = ["scp", "-o", "StrictHostKeyChecking=no", "-o", "UserKnownHostsFile=/dev/null", 
-                    data, "root@{}:/home/mc2/risecamp/mc2/tutorial/central/".format(ip)]
+    print("Transferring {}".format(data))
+    cmd = ["cp", data, "/home/mc2/risecamp/mc2/tutorial/central/"]
     run_subprocess(cmd)
     
 def generate_certificate(username):
