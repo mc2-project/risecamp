@@ -10,7 +10,7 @@ Follow the README in the [Secure XGBoost repository](https://github.com/mc2-proj
 Once you've installed Secure XGBoost, clone this repository, navigate to `risecamp/mc2/tutorial/`, and start a Jupyter server. Begin the tutorial with Exercise 1. 
 
 ## Docker Setup
-Alternatively, if you choose not to use the cloud, you can also choose to use Docker. However, if you use Docker, there will likely be issues with networking, so you may only be able to do the tutorial by yourself as a collaboration of one. 
+Alternatively, if you choose not to use the cloud, you can also choose to use Docker. However, if you use Docker, there will likely be issues with networking, so we've configured the Docker image to work with only one party. In particular, everything must happen in one container, and there will be no inter-container communication. 
 
 Pull the Docker image and start the container with proper port forwarding.
 
