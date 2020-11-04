@@ -17,7 +17,7 @@ Pull the Docker image and start the container with proper port forwarding.
 ```sh
 docker pull mc2project/risecamp:2020
 
-docker run -it -p 50051:50051 -p 50052:50052 -p 8888:8888 -w /root/risecamp/mc2/tutorial/ mc2project/risecamp:2020 /bin/bash
+docker run -it -p 50051:50051 -p 50052:50052 -p 8888:8888 -w /home/mc2/risecamp/mc2/tutorial/ mc2project/risecamp:2020 /bin/bash
 ```
 
 You should now be inside the container in the `~/risecamp/mc2/tutorial/` directory. Start the Jupyter notebook.
