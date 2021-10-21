@@ -8,6 +8,10 @@ running_processes = []
 def start_server(clients):
     global running_processes
     
+    if not isinstance(clients, list):
+        print("Argument to `start_server()` must be a list but was {}".format(type(clients)))
+        return
+
     if running_processes:
         for ps in running_processes:
             ps.kill()
