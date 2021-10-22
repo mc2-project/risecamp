@@ -2,8 +2,10 @@ pywren-config.env
 .ipynb_checkpoints
 .DS_Store
 mc2/tutorial/data/*.enc
+mc2/tutorial/central/*.enc
 mc2/tutorial/config/*
 !mc2/tutorial/config/root*
 !mc2/tutorial/config/gen-client.sh
 mc2/tutorial/key.txt
+mc2/tutorial/*.txt
 *__pycache__*
