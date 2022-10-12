@@ -1,36 +1,41 @@
-# RISE Camp 2021
+# Sky Camp 2022
 
-Welcome to the MC<sup>2</sup> tutorial for RISE Camp 2021. MC<sup>2</sup> is a platform for secure collaborative computation. In particular, for this tutorial we present [Secure XGBoost](https://github.com/mc2-project/secure-xgboost), a library for secure collaborative gradient boosted decision tree learning. In this tutorial, you'll collaborate with others to load encrypted data, train a model, and serve encrypted predictions. Below are instructions on how to set up and run the tutorial.
+Welcome to the MC<sup>2</sup> tutorial for Sky Camp 2021. MC<sup>2</sup> is a platform for secure collaborative computation. In particular, for this tutorial we present [Secure XGBoost](https://github.com/mc2-project/secure-xgboost), a library for secure collaborative gradient boosted decision tree learning. In this tutorial, you'll collaborate with others to load encrypted data, train a model, and serve encrypted predictions. Below are instructions on how to set up and run the tutorial.
 
-## Cloud Setup
-Azure Confidential Computing offers [virtual machines with Intel SGX support](https://azure.microsoft.com/en-us/blog/dcsv2series-vm-now-generally-available-from-azure-confidential-computing/) that you can use with MC2. You can also choose to use non enclave machines, in which case you'll need to build our library in simulation mode, as explained below. 
+## Participant Instructions
 
-Follow the README in the [Secure XGBoost repository](https://github.com/mc2-project/secure-xgboost) to install Secure XGBoost. If using a machine without enclave support, build the library in simulation mode -- take a look at step 5 of the ["Installation"](https://github.com/mc2-project/secure-xgboost#installation) section. 
+1. **Install Docker Desktop for your platform:** [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-Once you've installed Secure XGBoost, clone this repository, navigate to `risecamp/mc2/tutorial/`, and start two separate Jupyter servers from that directory. We need two servers as we'll be representing two different clients -- each client needs to have its own separate process.
+1. **Verify that Docker has been installed correctly**
+    1. Mac: TODO
+    2. Windows: TODO
+    3. Linux: TODO
 
-If you spin up the notebooks on a VM, you can either 
+1. **Pull and run the docker image for the tutorial**
+    
+    View the image on Dockerhub [here](https://hub.docker.com/repository/docker/mc2project/skycamp2022/general)
+    
+    *Note that the image size is ~3.4gb, so make sure to have at least this much storage space available on your machine before running the below commands.*
+    
 
-1) open up the Jupyter ports (8888,8889) under the VM's network configuration and navigate to `<VM_IP>:888{8,9}` (one notebook will be running on port 8888 and the other will be running on port 8889)
+```bash
+# This command pulls the tutorial image from Dockerhub
+docker pull mc2project/skycamp2022:v1
 
-2) SSH into the VM with port-forwarding enabled, as shown in the below script.
-
-```
-#!/bin/bash
-
-# Change the IP address (or machine name) with each restart.
-
-ADDR=$1
-NAME=mc2
-LHOST=localhost
-SSHKEY=$HOME/.ssh/id_rsa          # change if necessary to the name of your private key file
-
-for i in `seq 8888 8900`; do
-    FORWARDS[$((2*i))]="-L"
-    FORWARDS[$((2*i+1))]="$i:${LHOST}:$i"
-done
-
-ssh -i ${SSHKEY} -X ${FORWARDS[@]} -l ${NAME} ${ADDR}
+# This command is running docker with port binding on port 8888
+# This is necessary for accessing the tutorial notebook in your local browser
+# The `/home/mc2/risecamp/mc2/quick_start.sh` script contains commands to:
+#  1. Start the ssh service on Linux (needed for tutorial)
+#  2. Start a jupyter notebook on port 8888
+docker run -p 8888:8888 -it mc2project/skycamp2022:v1 /home/mc2/risecamp/mc2/quick_start.sh
 ```
 
-To run this, copy the above into a bash script `ssh.sh` and run the script: `./ssh.sh <VM_IP>`.
+4. **You should see output similar to the following if the Jupyter notebook has started successfully**
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fdcda775-e426-4c5f-8c73-101937a0ae71/Untitled.png)
+
+5. **Navigate to the displayed url at [http://127.0.0.1:8888](http://127.0.0.1:8888/) to view the Jupyter notebook interface and click on** `Welcome - Start Here.ipynb` **to start the tutorial!**
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2c3ced1-8cb9-456d-99f4-512616829ef8/Untitled.png)
+
+6. **Leave feedback for the Sky Camp MC2 tutorial [here](https://forms.gle/mRZNqMHa9Xgcrg9F6) 🙏**
