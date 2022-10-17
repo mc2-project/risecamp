@@ -6,7 +6,7 @@ import sys
 def launch(clients):
     # Launch enclave
     print("launched enclave")
-    enclave_image = "/home/mc2/secure-xgboost/build/enclave/xgboost_enclave.signed"
+    enclave_image = "/root/secure-xgboost/build/enclave/xgboost_enclave.signed"
     mc2.init_server(enclave_image=enclave_image, client_list=clients)
 
     # Launch RPC server
