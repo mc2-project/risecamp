@@ -4,12 +4,16 @@ Welcome to the MC<sup>2</sup> tutorial for Sky Camp 2021. MC<sup>2</sup> is a pl
 
 ## Participant Instructions
 
-1. **Install Docker Desktop for your platform:** [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+1. **Install Docker Desktop (Mac + Windows) or Docker Engine (version 20.10.8 or above).** Find installation instructions for your platform here: https://docs.docker.com/get-docker/
 
-1. **Verify that Docker has been installed correctly**
-    1. Mac: TODO
-    2. Windows: TODO
-    3. Linux: TODO
+1. **Verify that Docker has been installed correctly and is running**
+    
+    Run `docker version` and you should see output that lists version numbers for Docker Engine. If you do not see this or if the command `docker` is not found, then you may need to reinstall Docker or add Docker to your system path.
+    
+    **(Mac + Windows)** After starting Docker Desktop, run `docker ps` in your terminal and expect non-error output to verify that Docker is running.
+    
+    **(Linux)** Run `docker ps` to confirm that Docker us running. If not, then run `sudo service docker start` to start Docker.
+
 
 1. **Pull and run the docker image for the tutorial**
     
@@ -27,7 +31,7 @@ docker pull mc2project/skycamp2022:v1
 # The `/home/mc2/risecamp/mc2/quick_start.sh` script contains commands to:
 #  1. Start the ssh service on Linux (needed for tutorial)
 #  2. Start a jupyter notebook on port 8888
-docker run -p 8888:8888 -it mc2project/skycamp2022:v1 /home/mc2/risecamp/mc2/quick_start.sh
+docker run -p 8888:8888 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quick_start.sh
 ```
 
 4. **You should see output similar to the following if the Jupyter notebook has started successfully**
