@@ -26,19 +26,19 @@ Welcome to the MC<sup>2</sup> tutorial for Sky Camp 2021. MC<sup>2</sup> is a pl
 # This command pulls the tutorial image from Dockerhub
 docker pull mc2project/skycamp2022:v1
 
-# This command is running docker with port binding on port 8888
+# This command is running docker with port binding on port 8890
 # This is necessary for accessing the tutorial notebook in your local browser
 # The `/home/mc2/risecamp/mc2/quick_start.sh` script contains commands to:
 #  1. Start the ssh service on Linux (needed for tutorial)
 #  2. Start a jupyter notebook on port 8888
-docker run -p 8888:8888 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quick_start.sh
+docker run -p 8890:8890 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quick_start.sh
 ```
 
 4. **You should see output similar to the following if the Jupyter notebook has started successfully**
 
 ![terminal](./assets/terminal.png)
 
-5. **Navigate to the displayed url at [http://127.0.0.1:8888](http://127.0.0.1:8888/) to view the Jupyter notebook interface and click on** `Welcome - Start Here.ipynb` **to start the tutorial!**
+5. **Navigate to the displayed url at [http://127.0.0.1:8890](http://127.0.0.1:8890/) to view the Jupyter notebook interface and click on** `Welcome - Start Here.ipynb` **to start the tutorial!**
 
 ![jupyter](./assets/jupyter.png)
 
