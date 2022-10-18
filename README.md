@@ -3,7 +3,7 @@
 Welcome to the MC<sup>2</sup> tutorial for Sky Camp 2022. MC<sup>2</sup> is a platform for secure collaborative computation. In particular, for this tutorial we present [Secure XGBoost](https://github.com/mc2-project/secure-xgboost), a library for secure collaborative gradient boosted decision tree learning. In this tutorial, you'll collaborate with others to load encrypted data, train a model, and serve encrypted predictions. Below are instructions on how to set up and run the tutorial.
 
 ## Participant Instructions
-**Note**: Skip directly to __Step 5__ if you are using a Sky Lab provided virtual environment for all Sky Camp tutorials.
+### Note: Skip directly to Step 5 if you are using a Sky Lab provided virtual environment for all Sky Camp tutorials
 
 1. **Install Docker Desktop (Mac + Windows) or Docker Engine (version 20.10.8 or above).** Find installation instructions for your platform here: https://docs.docker.com/get-docker/
 
