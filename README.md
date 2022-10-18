@@ -3,6 +3,7 @@
 Welcome to the MC<sup>2</sup> tutorial for Sky Camp 2022. MC<sup>2</sup> is a platform for secure collaborative computation. In particular, for this tutorial we present [Secure XGBoost](https://github.com/mc2-project/secure-xgboost), a library for secure collaborative gradient boosted decision tree learning. In this tutorial, you'll collaborate with others to load encrypted data, train a model, and serve encrypted predictions. Below are instructions on how to set up and run the tutorial.
 
 ## Participant Instructions
+**Note**: Skip directly to __Step 5__ if you are using a Sky Lab provided virtual environment for all Sky Camp tutorials.
 
 1. **Install Docker Desktop (Mac + Windows) or Docker Engine (version 20.10.8 or above).** Find installation instructions for your platform here: https://docs.docker.com/get-docker/
 
@@ -38,7 +39,7 @@ docker run -p 8890:8890 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quic
 
 ![terminal](./assets/terminal.png)
 
-5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and enter the password `SkyCamp2022` to access the Jupyter Lab environment.**
+5. **Navigate to [http://127.0.0.1:8890](http://127.0.0.1:8890) or to the provided IP address you may have been given [http://{provided_ip_address}:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and enter the password `SkyCamp2022` to access the Jupyter Lab environment.**
 
 ![jupyter](./assets/jupyter_token.png)
 
