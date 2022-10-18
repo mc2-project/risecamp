@@ -28,17 +28,17 @@ docker pull mc2project/skycamp2022:v1
 
 # This command is running docker with port binding on port 8890
 # This is necessary for accessing the tutorial notebook in your local browser
-# The `/home/mc2/risecamp/mc2/quick_start.sh` script contains commands to:
+# The `/home/mc2/skycamp/mc2/quick_start.sh` script contains commands to:
 #  1. Start the ssh service on Linux (needed for tutorial)
-#  2. Start a jupyter notebook on port 8888
+#  2. Start a jupyter notebook on port 8890
 docker run -p 8890:8890 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quick_start.sh
 ```
 
 4. **You should see output similar to the following if the Jupyter notebook has started successfully**
 
-![terminal](./assets/terminal.png)
+![terminal](./assets/terminal2.png)
 
-5. **Navigate to the displayed url at [http://127.0.0.1:8890](http://127.0.0.1:8890/) to view the Jupyter notebook interface and click on** `Welcome - Start Here.ipynb` **to start the tutorial!**
+5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and click on** `tutorial/Welcome - Start Here.ipynb` **to start the tutorial!**
 
 ![jupyter](./assets/jupyter.png)
 
