@@ -38,7 +38,7 @@ docker run -p 8890:8890 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quic
 
 ![terminal](./assets/terminal.png)
 
-5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and enter the password `SkyCamp2022` to access the Jupyter Lab environment.
+5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and enter the password `SkyCamp2022` to access the Jupyter Lab environment.**
 
 ![jupyter](./assets/jupyter_token.png)
 
