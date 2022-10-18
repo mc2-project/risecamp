@@ -36,10 +36,14 @@ docker run -p 8890:8890 -it mc2project/skycamp2022:v1 /home/mc2/skycamp/mc2/quic
 
 4. **You should see output similar to the following if the Jupyter notebook has started successfully**
 
-![terminal](./assets/terminal2.png)
+![terminal](./assets/terminal.png)
 
-5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and click on** `tutorial/Welcome - Start Here.ipynb` **to start the tutorial!**
+5. **Navigate to [http://localhost:8890](http://localhost:8890) or [http://127.0.0.1:8890](http://127.0.0.1:8890) to view the Jupyter notebook interface and enter the password `SkyCamp2022` to access the Jupyter Lab environment.
 
-![jupyter](./assets/jupyter.png)
+![jupyter](./assets/jupyter_token.png)
+
+Click on `Welcome - Start Here.ipynb` in the left-hand file viewer to start the tutorial!**
+
+![jupyter](./assets/jupyter_lab.png)
 
 6. **Leave feedback for the Sky Camp MC2 tutorial [here](https://forms.gle/mRZNqMHa9Xgcrg9F6) 🙏**

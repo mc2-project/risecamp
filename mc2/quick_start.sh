@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo /etc/init.d/ssh start
-jupyter notebook --ip "*" --no-browser --port=8890 --allow-root --NotebookApp.token='SkyCamp2022'
+jupyter lab --ip "*" --no-browser --port=8890 --allow-root --notebook-dir=/home/mc2/skycamp/mc2/tutorial --NotebookApp.token='SkyCamp2022'

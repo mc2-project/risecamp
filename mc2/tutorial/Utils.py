@@ -1,6 +1,7 @@
 import subprocess
 import sys
 import os
+import psutil
 import securexgboost as mc2
 
 running_processes = []
@@ -13,9 +14,16 @@ def start_server(clients):
         return
 
     if running_processes:
+    # Kill any running instances of the orchestrator and enclave process from prior runs
         for ps in running_processes:
             ps.kill()
         running_processes = []
+    
+    # As a secondary check, kill any orchestrator or enclave processes which may have been left over 
+    mypid = os.getpid()
+    for proc in psutil.process_iter():
+        if proc.pid != mypid and proc.name == 'utils/launch_enclave.py' or proc.name == 'utils/start_orchestrator.py':
+            proc.kill()
         
     enclave = ["python3", "utils/launch_enclave.py", str(clients)]
     orchestrator = ["python3", "utils/start_orchestrator.py", str(clients)]
